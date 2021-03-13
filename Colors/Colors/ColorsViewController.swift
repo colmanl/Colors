@@ -33,7 +33,7 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell", for: <#T##IndexPath#>)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "colorCell", for: indexPath)
         
         let color = colors[indexPath.row]
         cell.textLabel?.text = colors[indexPath.row].name
